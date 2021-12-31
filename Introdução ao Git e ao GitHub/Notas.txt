@@ -1,4 +1,5 @@
-Apesar de eu já ter onhecimentos e ser usuário do git e gitHub, recomendo grandemente a realização deste curso,
-de formas a coordenar melhor os passos de interação entre ambas.
-Abaixo o link do meu certificado
-https://certificates.digitalinnovation.one/8E58EB5C
+Apesar de eu já ter conhecimentos e ser usuário do git e gitHub, recomendo grandemente a todos a realização deste curso.
+Aguda de forma simples a coordenar melhor os passos de interação entre ambas Git e GitHub.
+
+Abaixo o link do meu certificado obtido neste curso
+https://certificates.digitalinnovation.one/8E58EB5C 
