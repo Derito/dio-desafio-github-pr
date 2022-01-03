@@ -14,7 +14,7 @@ public class Operadores {
        // ++soma;// Resultado 8 seria soma = soma(3) - a(4)  e soma(7)+ (1)
         subtracao -= a;// Resultado -1 subtracao = subtracao - a
         //subtracao--;// Resultado -2 seria subtração = subtracao(3) - a(4)  e subtracao(-1)+ (-1)
-        --subtracao;// Resultado -2 seria subtração = subtracao(3) - a(4)  e subtracao(-1)+ (-1)
+        --subtracao;// Resultado -2 seria  subtracao(3)+ (-1) =  subtracao(2) - a(4)
         //subtracao++;// Resultado 0 seria subtração = subtracao(3) - a(4)  e subtracao(-1)+ (1)
        //++subtracao;// Resultado 0 seria subtração = subtracao(3) - a(4)  e subtracao(-1)+ (1)
         divisao /= a;
