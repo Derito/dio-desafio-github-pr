@@ -1,0 +1,8 @@
+
+R
+java:S1854	"7Remove this useless assignment to local variable "num".(«¼ˆÖıÿÿÿÿ
+C
+java:S1481	"(Remove this unused "num" local variable.(«¼ˆÖıÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Æí£Å
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Á­çşÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(æ‡™“øÿÿÿÿ

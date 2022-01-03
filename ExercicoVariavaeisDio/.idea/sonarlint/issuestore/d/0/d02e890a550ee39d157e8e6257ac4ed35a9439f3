@@ -1,0 +1,19 @@
+
+Q
+java:S1854
+"5Remove this useless assignment to local variable "c".(’šÈ8¤‘Â€â/
+B
+java:S1481
+"&Remove this unused "c" local variable.(’šÈ8¦‘Â€â/
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÇœğÑûÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(š—°øÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(üéƒë
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ß¸„÷
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ü­Ÿı
+T	java:S106"9Replace this use of System.out or System.err by a logger.(õ¹ío8óÙ½€â/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(¿¦äÁ8Ù³¾€â/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(‡¤Ÿ”8ƒƒ¿€â/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(¯ô¢ô8¶Ï¿€â/
+U	java:S106 "9Replace this use of System.out or System.err by a logger.(³ÎÄò8İºÀ€â/
+T	java:S106!"9Replace this use of System.out or System.err by a logger.(ƒ¶âf8œ¶Á€â/
+U	java:S106""9Replace this use of System.out or System.err by a logger.(©şÆ8à¬Â€â/
