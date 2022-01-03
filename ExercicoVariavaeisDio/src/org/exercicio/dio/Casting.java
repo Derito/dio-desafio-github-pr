@@ -9,6 +9,7 @@ public class Casting {
         byte b = 22;
         float c = 2.3f;
         double d = 2.7777777d;
+        short e = 2234;
 
         // int
         i = (int) a;// Necessário casting porque estamos atribuindo a uma variavel int um long > capacidade
@@ -37,6 +38,16 @@ public class Casting {
         //float e double
         c = (float) d;// Necessário casting porque estamos atribuindo a uma variavel float um double > capacidade
         d = c;//Não necessita casting por d ser double e c float menor capacidade
+
+        //short
+        e = (short) i;
+        i = e;
+        e = b;
+        b = (byte) e;
+        e = (short) c;
+        c = e;
+        e = (short) d;
+        d = e;
 
         //Exemplos
         System.out.println(i);

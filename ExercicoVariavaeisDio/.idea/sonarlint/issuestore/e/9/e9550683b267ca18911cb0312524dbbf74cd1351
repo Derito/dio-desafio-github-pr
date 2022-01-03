@@ -1,14 +1,16 @@
 
+R
+java:S1854""5Remove this useless assignment to local variable "c".(•îØü8Íò™Œâ/
 K
-java:S1854!"5Remove this useless assignment to local variable "c".(•îØü
-K
-java:S1854"5Remove this useless assignment to local variable "b".(ÉÊ±Á
-P
-java:S1854"5Remove this useless assignment to local variable "a".(Ü‹‡½ÿÿÿÿÿ
+java:S1854"5Remove this useless assignment to local variable "b".(ÉÊ±Á
 W
-java:S1854"5Remove this useless assignment to local variable "i".(úŞÛ¨ùÿÿÿÿ8ÈŒø‹â/
-S	java:S106*"9Replace this use of System.out or System.err by a logger.(´‹¹öşÿÿÿÿ
-S	java:S106+"9Replace this use of System.out or System.err by a logger.(æ¨¤šøÿÿÿÿ
-S	java:S106,"9Replace this use of System.out or System.err by a logger.(š—°øÿÿÿÿ
-N	java:S106-"9Replace this use of System.out or System.err by a logger.(Áß‡Ü
-N	java:S106."9Replace this use of System.out or System.err by a logger.(¯ô¢ô
+java:S1854"5Remove this useless assignment to local variable "a".(Ü‹‡½ÿÿÿÿÿ8Íà˜Œâ/
+P
+java:S1854"5Remove this useless assignment to local variable "e".(ÙóƒÎûÿÿÿÿ
+P
+java:S1854"5Remove this useless assignment to local variable "i".(úŞÛ¨ùÿÿÿÿ
+S	java:S1065"9Replace this use of System.out or System.err by a logger.(´‹¹öşÿÿÿÿ
+S	java:S1066"9Replace this use of System.out or System.err by a logger.(æ¨¤šøÿÿÿÿ
+S	java:S1067"9Replace this use of System.out or System.err by a logger.(š—°øÿÿÿÿ
+N	java:S1068"9Replace this use of System.out or System.err by a logger.(Áß‡Ü
+N	java:S1069"9Replace this use of System.out or System.err by a logger.(¯ô¢ô
