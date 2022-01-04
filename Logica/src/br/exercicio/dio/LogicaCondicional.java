@@ -6,12 +6,13 @@ public class LogicaCondicional {
 
     public static void main(String[] args) {
 
-        usandoIf();
-        usandoSwitchVar();
+        //usandoIf();
+        //usandoSwitchVar();
         usandoIfInc();
-        usandoSwitch();
+       // usandoSwitch();
 
     }
+
     private static void usandoIf() {
         Scanner scanner = new Scanner(System.in);
         int mesDoAno = scanner.nextInt();
@@ -44,6 +45,7 @@ public class LogicaCondicional {
             System.out.println("Valor não existente ");
         }
     }
+
     private static void usandoSwitchVar() {
         Scanner scane = new Scanner(System.in);
         int variavel = scane.nextInt();
@@ -64,13 +66,26 @@ public class LogicaCondicional {
                 break;
         }
     }
-    private static void usandoIfInc(){
+
+    private static void usandoIfInc() {
         Scanner scan = new Scanner(System.in);
-         int mesDoAno = scan.nextInt();
+        int mesDoAno = scan.nextInt();
         if (mesDoAno == 1 || mesDoAno == 7 || mesDoAno == 12) {
             System.out.println("Ferias");
         }
+// Ideal seria fazer em Switch visto ser uma unica variavel
+        String mesAno = scan.next();
+        switch (mesAno) {
+            case "Janeiro":
+            case "Julho":
+            case "Dezembro":
+                System.out.println("Ferias");
+                break;
+            default:
+                System.out.println("Mês de trabalho!");
+        }
     }
+
     private static void usandoSwitch() {
         Scanner scan = new Scanner(System.in);
         String diaSemana = scan.next();
