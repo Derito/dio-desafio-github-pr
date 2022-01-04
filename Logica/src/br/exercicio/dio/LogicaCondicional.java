@@ -87,8 +87,10 @@ public class LogicaCondicional {
             case 4:
                 System.out.println("Errado");
                 break;
+            case 5:
+                System.out.println("Talvez");
             default:
-                System.out.println("Fora do rating");
+                System.out.println("Fora do rating ou valor indefinido!");
                 break;
         }
     }
