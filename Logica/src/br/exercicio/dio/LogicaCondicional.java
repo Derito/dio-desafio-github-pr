@@ -67,13 +67,29 @@ public class LogicaCondicional {
                 System.out.println("6");
                 break;
             case "Sabado":
-                System.out.println("7 " );
+                System.out.println("7 ");
                 break;
             case "Domingo":
                 System.out.println("1");
                 break;
             default:
                 System.out.println("Dia não existente");
+        }
+        Scanner scane = new Scanner(System.in);
+        int variavel = scane.nextInt();
+
+        switch (variavel) {
+            case 1:
+            case 2:
+            case 3:
+                System.out.println("Certo");
+                break;
+            case 4:
+                System.out.println("Errado");
+                break;
+            default:
+                System.out.println("Fora do rating");
+                break;
         }
     }
 }
