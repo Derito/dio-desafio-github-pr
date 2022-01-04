@@ -7,4 +7,6 @@ O tamanho dos textos em h1 e h2 respectivamente é conseguido por meio da # e ##
 2. [jdk](https://github.com/shyiko/jabba) (Jabba)<br>
 Podera encontrar aqui diversas vesões do jdk open source.<br>
 3. [Vim - Comandos](https://github.com/Derito/dio-desafio-github-pr/blob/master/Instalando%20e%20Executando%20Java%20-%20Linux/Vim.txt)<br>
-Encontre aqui os comandos do editor de texto Vim.
+Encontre aqui os comandos do editor de texto Vim.<br>
+4. [Link de exercícios Arrays] (https://wiki.python.org.br/EstruturaDeRepeticao)<br>
+ Lista de exercicios sobre **Estrutura de repetição e Arrays. Por resolver.**
