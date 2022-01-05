@@ -1,0 +1,483 @@
+
+Fala, meus consagrados! Tudo beleza com vocês?
+
+Em várias questões sobre código na Linguagem Java, os examinadores usam os operadores de incremento e decremento. É importante entender como eles são usados para que saibamos como será resultado da execução dos códigos das questões de concursos. Então simbora!
+
+Introdução
+São os seguintes operadores unários:
+Nome
+Símbolo
+Descrição
+Mais
++
+Indica valor positivo
+Não é necessário usá-lo em números positivos
+Menos
+–
+Nega uma expressão ou um número
+Incremento
+++
+Incrementa um valor em um
+Decremento
+—
+Diminui um valor em um
+Complemento lógico
+!
+Inverte o valor de um boolean
+São unários porque são aplicados em apenas um operando.
+
+Por exemplo:
+
+int x = 15;
+System.out.println(“x: ” + ++x); // O resultado gerado é x: 16.
+Operadores de incremento e decremento
+Operador de incremento
+Incrementa um valor em um.
+
+Suponhamos que temos uma variável x do tipo int, se temos x++ é como se fosse x = x + 1.
+
+Operador de decremento
+Diminui um valor em um.
+
+Suponhamos que temos uma variável x do tipo int, se temos x– é como se fosse x = x – 1.
+
+Eles podem ser:
+
+Pré-fixados; ou
+Pós-fixados.
+Pré-fixados
+É avaliado o valor incrementado ou decrementado de uma variável. O valor trabalhado já é o incrementado ou decrementado.
+
+Exemplo:
+
+int x = 15, y = 15;
+System.out.println(“x: ” + ++x); // O resultado gerado é x: 16.
+System.out.println(“y: ” + --y); // O resultado gerado é y: 14.
+No código acima, o valor impresso da variável x é o valor já incrementado e o valor impresso da variável y  é o valor decrementado.
+
+Pós-fixados
+É avaliado o valor original, ou seja, o valor trabalhado é o valor original de uma variável. Depois o valor da variável é incrementado ou decrementado.
+
+Exemplo:
+
+int x = 15;
+System.out.println(“x: ” + x++); // O resultado gerado é x: 15.
+System.out.println(“x: ” + x); // O resultado gerado é x: 16.
+Na primeira impressão do valor da variável x, o valor dessa variável é o valor original (15), depois a variável é incrementada. Depois, na segunda impressão, o valor incrementado é impresso (16).
+
+Faremos uma série de questões de concursos para entendermos como esses operadores são cobrados.
+
+Questões de Concursos
+[1] [Instituto AOCP 2019 IBGE – Analista Censitário – Análise de Sistemas – Desenvolvimento de Aplicações] A linguagem Java, possibilita trabalhar com operadores de pós-incremento e pré-incremento. Sabendo disso, analise o seguinte trecho de código e assinale a alternativa que apresenta o resultado correto do código dado.
+
+(...)
+int n = 100;
+System.out.printf("%d%n", n);
+System.out.printf("%d%n", n++);
+System.out.printf("%d%n", n);
+(...)
+ 
+
+[A] 100, 100, 101.
+
+[B] 100, 101,101.
+
+[C] 100, 100, 100.
+
+[D] 100, 200,100.
+
+[E] 100, 200, 200.
+
+Comentários:
+
+Para dar contexto ao trecho do código da questão, vamos colocar em uma classe e comentá-lo:
+
+01.public class Questao01 {
+02.    public static void main(String []args) {
+03.        int n = 100;
+04.
+05.        System.out.printf("%d%n", n); // Imprime 100.
+06.        System.out.printf("%d%n", n++); // Imprime 100.
+07.        System.out.printf("%d%n", n); // Imprime 101.
+08.    }
+09.}
+O trecho de código da questão foi colocado dentro do método main da classe Questao01. Esse método faz com que a classe seja executável.
+
+O resultado da execução da classe é:
+
+100
+100
+101
+Na linha 03, dentro do método main, há a variável local n do tipo int. Ela foi inicializada com o valor 100.
+
+printf (System.out.printf()) é uma função que imprime um valor formatado. No caso, o valor da variável n será formatado na sua impressão (%d), seguido de uma quebra de linha (%n).
+
+Não vamos entrar em detalhes nessa função e nos parâmetros de formatação. O importante é saber qual é valor da variável n será impresso:
+
+Na linha 05, será impresso o valor de inicialização da variável n (100); e
+Na linha 06:
+Há o uso do operador unário pós-fixado na variável n, ou seja:
+Será impresso valor original da variável n (100); e
+Depois o valor dessa variável será incrementado (101); e
+Na linha 07, será impresso o valor da variável n (101).
+Com isso, o gabarito da nossa questão é a letra A.
+
+Gabarito: letra A.
+
+[2] [IDIB 2020 CRM/MT – Técnico em Informática] A linguagem de programação Java foi desenvolvida na década de 90, permanecendo até hoje como umas das linguagens de programação orientadas a objeto mais utilizadas em todo o mundo. A respeito das operações matemáticas que podemos fazer com Java, analise o código fonte abaixo e assinale a alternativa que indica corretamente o valor que será exibido em tela após sua execução.
+
+
+[A] 1
+
+[B] 2
+
+[C] 8
+
+[D] 4
+
+Comentários:
+
+Organizando e comentando o código:
+
+01.public class Main {
+02.    public static void main(String[] args) {
+03.        int a = 0, b = 0, c = 0;
+04.        
+05.        a += 3; // a recebe 3.
+06.        b = a++ + ++b; // b recebe 4 e a é atualizada para 4
+07.        c = b % a; // c recebe 0.
+08.        
+09.        System.out.println(a + b + c); // Imprime o valor 8.
+10.    }
+11.}
+A classe Main é uma classe executável, pois possui o método main. 90% das questões sobre código Java citam classes executáveis.
+
+O resultado da execução da classe é:
+
+8
+O método main possui três variáveis locais do int, todas inicializadas com o valor 0: a, b e c.
+
+Na linha 05 (a += 3):
+
+A variável a recebe o valor atual dela (0) mais 3;
+a += 3 que é equivalente a a = a + 3;
+A variável a então recebe 3.
+Na linha 06 (b = a++ + ++b):
+
+Temos a soma do valor original da variável a (3) (depois ela é incrementada para valor 4) com o valor já incrementado da variável b (1);
+Isso porque:
+Na variável a é aplicado o operador de incremento pós-fixado; e
+Na variável b é aplicado o operador de incremento pré-fixado;
+A variável b então recebe 4;
+Que é o resultado da soma;
+A variável a fica com o valor 4;
+Por conta do incremento do operador unário.
+Na linha 07 (c = b % a):
+
+A variável c recebe o resultado do resto da divisão do valor da variável b (4) pelo valor da variável a (4);
+A variável c então recebe 0.
+Na linha 09, é impresso o resultado da soma dos valores das variáveis a (4), b (4) e c (0), ou seja, será impresso o valor 8.
+
+Portanto, gabarito é a letra C.
+
+Gabarito: letra C.
+
+[3] [IBADE 2018 IPM/JP – Analista Previdenciário – Analista de Redes e Comunicação] Java disponibiliza operadores aritméticos e relacionais para uso. Nesse sentido, considere as três situações caracterizadas a seguir.
+
+[I] Avaliar o valor do operador w e após incrementar em uma unidade.
+
+[II] Retornar TRUE se x é diferente de y.
+
+[III] Obter o resto da divisão de x por y.
+
+As sintaxes empregadas nas situações I, II e III são, respectivamente:
+
+[A] ++w, x <> y e x $ y
+
+[B] ++w, x != y e x % y
+
+[C] w++, x <> y e x % y
+
+[D] w++, x != y e x % y
+
+[E] w++, x != y e x $ y
+
+Comentários:
+
+Analisando cada item:
+
+Item I: “Avaliar o valor do operador w e após incrementar em uma unidade”;
+Esse item está citando o operador unário de incremento pós-fixado;
+Pois o incremento é feito após a avaliação do valor do operando;
+w++;
+Item II: “Retornar TRUE se x é diferente de y”;
+Esse item descreve o operador diferente de (!=);
+x != y;
+Item III: “Obter o resto da divisão de x por y”;
+É o operador aritmético módulo ou resto da divisão (%);
+x % y;
+A única letra cita de forma correta as sintaxes vistas na análise de cada item é a letra D.
+
+Gabarito: letra D.
+
+[4] [IADES 2011 PG/DF – Analista Jurídico – Analista de Sistemas] Analise o código fonte em Java a seguir e assinale a alternativa que apresenta o resultado da execução do programa.
+
+
+Analise o código fonte em Java a seguir e assinale a alternativa que apresenta o resultado da execução do programa.
+
+[A] Valores = 16
+
+[B] Valores = 548
+
+[C] Valores = 18
+
+[D] Valores = 649
+
+[E] Valores = 19
+
+Comentários:
+
+O código desta questão é bem parecido com o código da questão [2].
+
+Organizando e comentando o código:
+
+01.import java.io.*;
+02.public class Calculadora {
+03.    public static void main(String [] args) {
+04.        int a, b, c;
+05.
+06.        a = 5; // a recebe 5.
+07.        b = 3; // a recebe 3.
+08.        c = a++ + ++b; // c recebe 9. a é atualizada para 6 e b, para 4.
+09.
+10.        System.out.println(“Valores = ” + a + b + c); // Imprime a string "Valores = 649".
+11.    }
+12.}
+A classe Calculadora é uma classe executável, pois possui o método main.
+
+O resultado da execução da classe é:
+
+Valores = 649
+O método main possui três variáveis locais do int: a, b e c.
+
+Nas linhas 06 e 07, as variáveis a e b recebem 5 e 3, respectivamente.
+
+Na linha 08 (c = a++ + ++b):
+
+Temos a soma do valor original da variável a (5) (depois ela é incrementada para valor 6) com o valor já incrementado da variável b (4);
+Isso porque:
+Na variável a é aplicado o operador de incremento pós-fixado; e
+Na variável b é aplicado o operador de incremento pré-fixado;
+A variável c então recebe 9;
+Que é o resultado da soma;
+A variável a fica com o valor 6;
+Por conta do incremento do operador unário.
+A variável b fica com o valor 4.
+Antes de explicar a linha 10, temos que conhecer como acontece a concatenação de strings na Linguagem Java. Se forem usados vários operadores de adição e vários operandos, a partir do primeiro operando do tipo String, terão a função de concatenar strings:
+
+O operador de adição antes desse operando; e
+Todos os operadores de adição após ele.
+Exemplo:
+
+String z = 15 + 8 + “Kal-El” + 15 + 8;
+z terá valor de “23Kal-El158”
+15 + 8 antes do operando “Kal-El” foram somados (23)
+15 + 8 depois do operando “Kal-El” foram concatenados (158)
+Voltando ao código, na linha 10, o que será impresso? Há o seguinte código “Valores = ” + a + b + c. Como temos o primeiro operando do tipo String, os operadores + nesse caso terão a função de concatenação de strings: Valores = 649. Ou seja, não teremos a soma dos valores das variáveis a, b e c (9 + 6 + 4 = 19). Isso é uma pegadinha do examinador para levar o candidato a marcar a letra E.
+
+Com isso, o gabarito é a letra D.
+
+Gabarito: letra D.
+
+[5] [FGV 2010 BADESC – Analista de Sistemas – Desenvolvimento de Sistemas – Questão 35] Observe o código em Java a seguir, em que se pode verificar a aplicação dos operadores de pré-decremento e pós-decremento.
+
+
+Após a execução do código, as variáveis m e n exibirão, respectivamente, os valores:
+
+[A] 42 e 41.
+
+[B] 42 e 42.
+
+[C] 42 e 43.
+
+[D] 43 e 42.
+
+[E] 43 e 43.
+
+Comentários:
+
+Organizando e comentando o código:
+
+01.public class Decrementa { 
+02.    public static void main(String[] args) { 
+03.        int m, n = 44; // m não foi inicializada e n recebe 44;
+04.
+05.        m = --n; // m recebe 43 e n é atualizada para 43.
+06.        m = n--; // m recebe 43 e n é atualizada para 42.
+07.
+08.        System.out.println(m); // Imprime o valor 43.
+09.        System.out.println(n); // Imprime o valor 42.
+10.    } 
+11.}
+A classe Decrementa é uma classe executável, pois possui o método main.
+
+O resultado da execução da classe é:
+
+43
+42
+O método main possui duas variáveis locais do int: m e n. A variável n é inicializada com o valor 44.
+
+Na linha  05 (m = –n), a variável m recebe o valor já decrementado da variável n (43):
+
+Isso porque,  na variável n é aplicado o operador de decremento pré-fixado;
+A variável m então recebe 43; e
+A variável n fica com o valor 43.
+Na linha  06 (m = n–), a variável m recebe o valor original da variável n (43) (depois ela é decrementada para valor 42):
+
+Isso porque,  na variável n é aplicado o operador de decremento pós-fixado;
+A variável m então recebe 43; e
+A variável n fica com o valor 42.
+Na linha 08, será impresso o valor da variável m: 43 e , na linha 09, o valor da variável n: 42.
+
+Portanto, o gabarito é a letra D.
+
+Gabarito: letra D.
+
+[6] [FGV 2018 Banestes – Analista em Tecnologia da Informação – Desenvolvimento de Sistemas] O programa Java
+
+
+produz o número:
+
+[A] 0;
+
+[B] 1;
+
+[C] 2;
+
+[D] 3;
+
+[E] 4.
+
+Comentários:
+
+Organizando e comentando o código:
+
+01.public class enigma { 
+02.    public static void main(String[] args) { 
+03.        int m = 0, n = 2; // m recebe 0 e n recebe 2;
+04.
+05.        do {
+06.            m = ++m;
+07.            n--;
+08.        } while (n > 0);
+09.
+10.        System.out.println(m); // Imprime o valor 2.
+11.    } 
+12.}
+A classe enigma é uma classe executável, pois possui o método main.
+
+O resultado da execução da classe é:
+
+2
+O método main possui duas variáveis locais do int: m e n. A variável m é inicializada com o valor 0 e a variável n, com valor 2.
+
+Há uma estrutura de controle do-while (linhas 05 a 08) no método main. Como a condição dessa estrutura é testada no final dela, então pelo menos uma iteração do do-while é feita.
+
+Analisando a estrutura do-while:
+
+Na primeira iteração:
+Na linha 06 (m = ++m), a variável m recebe o seu valor já atualizada (1);
+Isso porque,  na variável m é aplicado o operador de decremento pré-fixado;
+Na linha 07 (n–), a variável n é decrementada (1);
+Na linha 08 (while (n > 0)), é feito o teste se o valor da variável n é maior que 0;
+Nesse caso, é sim (n tem o valor 1); e
+Haverá outra iteração no do-while;
+Na segunda iteração:
+Na linha 06 (m = ++m), a variável m recebe o seu valor já atualizada (2);
+Isso porque,  na variável m é aplicado o operador de decremento pré-fixado;
+Na linha 07 (n–), a variável n é decrementada (0);
+Na linha 08 (while (n > 0)), é feito o teste se o valor da variável n é maior que 0;
+Nesse caso, não é (n tem o valor 0); e
+A estrutura do-while é encerrada.
+Na linha 10, será impresso o valor da variável m: 2. Portanto, o gabarito é a letra C.
+
+Gabarito: letra C.
+
+[7] [CESPE 2011 EBC – Cargo 12] A respeito de estruturas de controle de fluxo em algoritmos, julgue o próximo item.
+
+Na linguagem Java, a expressão contador ← contador + 1 é representada, usando-se o operador de incremento  ++, por contador ++.
+
+Comentários:
+
+Em portugol, o operador de atribuição ← existe, mas na Linguagem Java, não. Em Java, usa-se o operador de atribuição =.
+
+O texto correto para a questão seria o seguinte:
+
+“Na linguagem Java, a expressão contador = contador + 1 é representada, usando-se o operador de incremento  ++, por contador ++”.
+
+O gabarito anterior era CERTO, mas foi modificado para ERRADO pela seguinte justificativa:
+
+“A representação proposta para a expressão tratada no item está equivocada, razão suficiente para a alteração do gabarito”.
+
+Gabarito: ERRADO.
+
+[8] [VUNESP 2016 Prefeitura de Presidente Prudente/SP – Programador de Sistemas Júnior] Considere o código Java a seguir:
+
+float x = 0;
+System.out.print(++x++);
+Esse código
+
+[A] compila e imprime o número 1 (um) quando executado.
+
+[B] compila e imprime o número 0 (zero) quando executado.
+
+[C] compila e imprime o número 2 (dois) quando executado.
+
+[D] não compila, pois não é possível utilizar os operadores de incremento sobre uma constante.
+
+[E] não compila, pois os operadores de incremento apenas podem ser aplicados a números inteiros.
+
+Comentários:
+
+Para dar contexto ao trecho do código da questão, vamos colocar em uma classe e comentá-lo:
+
+01.public class Questao08 {
+02.    public static void main(String []args) {
+03.        float x = 0;
+04.
+05.        System.out.printf(++x++); // Não imprime nada porque gera um erro de compilação.
+06.    }
+07.}
+
+O trecho de código da questão foi colocado dentro do método main da classe Questao08. Esse método faz com que a classe seja executável.
+
+O resultado da execução da classe é:
+
+enigma.java:5: error: unexpected type
+        System.out.print(++x++);
+                            ^
+  required: variable
+  found:    value
+1 error
+Vamos entender qual é o motivo do erro em tempo de compilação.
+
+Na linha 03, dentro do método main, há a variável local x do tipo float. Ela foi inicializada com o valor 0.
+
+Na linha 05, o código tenta imprimir o resultado da operação ++x++:
+
+É aplicado na variável x dois operadores de incremento: pré e pós-fixado;
+A primeira operação é aplicada é a operação de incremento pré-fixado:
+A variável x é então atualizada para 1;
+Depois é aplicada a operação de incremento pós-fixado no resultado da operação anterior;
+Ou seja, seria como aplicar uma operação de incremento pós-fixado em um valor constante 1:
+1++;
+Mas isso geral um erro:
+Não é possível utilizar os operadores de incremento sobre uma constante.
+Portanto, o trecho de código da questão gera um erro de compilação e o motivo é não é possível utilizar os operadores de incremento sobre uma constante. Ou seja, letra D.
+
+Gabarito: letra D.
+
+Espero que gostem e desejo que se preparem conosco durante essa jornada na conquista de uma tão sonhada vaguinha em um concurso público.
+
+Então é isso!
+[]’s e até a próxima!
