@@ -2,7 +2,8 @@ package br.exercicio.dio;
 
 public class LoopsForWhile {
     public static void main(String[] args) {
-        loopFor();
+        //loopFor();
+        lacoWhile();
     }
 
     private static void loopFor() {
@@ -17,7 +18,14 @@ public class LoopsForWhile {
                 System.out.print(i + " ");
             }
         }
+    }
 
-
+    private static void lacoWhile(){
+        //Faça um While que exiba um texo 5 vezes com uma estrutura de controle e uma variavel booleana
+        int cont = 1;
+        while(cont <= 5){
+            System.out.println("Será impresso cinco vezes este texto!");
+            cont++;
+        }
     }
 }
