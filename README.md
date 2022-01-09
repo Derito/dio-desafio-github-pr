@@ -9,4 +9,5 @@ Podera encontrar aqui diversas vesões do jdk open source.<br>
 3. [Vim - Comandos](https://github.com/Derito/dio-desafio-github-pr/blob/master/Instalando%20e%20Executando%20Java%20-%20Linux/Vim.txt)<br>
 Encontre aqui os comandos do editor de texto Vim.<br>
 4. [Link de exercícios Arrays](https://wiki.python.org.br/EstruturaDeRepeticao)<br>
-Lista de exercicios sobre **Estrutura de repetição e Arrays. Por resolver.**
+Lista de exercicios sobre **Estrutura de repetição e Arrays. Por resolver.**<br>
+5. [Guia Foca - Linux] (https://guiafoca.org/)
