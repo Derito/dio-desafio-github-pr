@@ -10,4 +10,5 @@ Podera encontrar aqui diversas vesões do jdk open source.<br>
 Encontre aqui os comandos do editor de texto Vim.<br>
 4. [Link de exercícios Arrays](https://wiki.python.org.br/EstruturaDeRepeticao)<br>
 Lista de exercicios sobre **Estrutura de repetição e Arrays. Por resolver.**<br>
-5. [Guia Foca - Linux](https://guiafoca.org/)
+5. [Guia Foca - Linux](https://guiafoca.org/)<br>
+Encontre aqui informação sobre linux do basico ao avançado.
