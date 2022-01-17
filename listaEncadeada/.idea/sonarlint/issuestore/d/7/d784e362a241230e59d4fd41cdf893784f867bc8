@@ -1,0 +1,10 @@
+
+C
+java:S1125E"(Remove the unnecessary boolean literals.(øƒ¨³ÿÿÿÿÿ
+s	java:S1355"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ
+_
+java:S2259-"IA "NullPointerException" could be thrown; "refAnterior" is nullable here.(ÄğĞù
+[
+java:S2259-"EA "NullPointerException" could be thrown; "refPivo" is nullable here.(ÄğĞù
+_
+java:S2259"DA "NullPointerException" could be thrown; "getNo()" can return null.(Ç¾Èüÿÿÿÿ

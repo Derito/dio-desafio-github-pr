@@ -1,0 +1,11 @@
+Feature: FizzBuzz
+    Print a sequence of numbers,
+    but for multiple of 3 print Fizz
+    and for multiples of 5 print Buzz
+    and for multiples of 3 and 5 print FizzBuzz.
+
+Scenario: FizzBuzz a number
+    Given the user selected the number 2
+    And selected the category x
+    When the user clicked the fizzBuzz button
+    Then the program prints 2
