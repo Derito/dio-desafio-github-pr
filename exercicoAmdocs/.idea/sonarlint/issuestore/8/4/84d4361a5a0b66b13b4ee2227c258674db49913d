@@ -1,0 +1,22 @@
+
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ϋΏΨ8οΖζωζ/
+‚
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(ϋΏΨ
+f	java:S117#"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»γΜ
+f	java:S117$"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(οφ΅†
+f	java:S117%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ο΅©Λ
+k	java:S117&"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ίτΖΙώÿÿÿÿ
+f	java:S117'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡§μ®
+Z
+java:S25891"8Remove this expression which always evaluates to "false"(¬ γ°ϋÿÿÿÿ8·ξϊζ/
+Z
+java:S25895"8Remove this expression which always evaluates to "false"(­Τªξύÿÿÿÿ8·ξϊζ/
+U
+java:S2589/"8Remove this expression which always evaluates to "false"(γ›Η8Έξϊζ/
+Z
+java:S25895"8Remove this expression which always evaluates to "false"(­Τªξύÿÿÿÿ8Έξϊζ/
+Z
+java:S25893"8Remove this expression which always evaluates to "false"(Σκ¦ψÿÿÿÿ8Έξϊζ/
+Z
+java:S25893"8Remove this expression which always evaluates to "false"(Σκ¦ψÿÿÿÿ8Έξϊζ/
