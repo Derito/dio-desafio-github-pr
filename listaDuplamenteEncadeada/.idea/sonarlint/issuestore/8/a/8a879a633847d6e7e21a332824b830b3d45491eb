@@ -1,0 +1,9 @@
+
+>
+java:S1643Y"Use a StringBuilder instead.(”Ÿµˆþÿÿÿÿ8Æ›–Ìæ/
+_
+java:S2259"DA "NullPointerException" could be thrown; "getNo()" can return null.(øÿî·ùÿÿÿÿ
+d
+java:S2259>"IA "NullPointerException" could be thrown; "refAuxiliar" is nullable here.(âÌªÄüÿÿÿÿ
+d
+java:S2259'"IA "NullPointerException" could be thrown; "refAuxiliar" is nullable here.(û˜¶Ìüÿÿÿÿ
