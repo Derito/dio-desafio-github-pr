@@ -12,3 +12,8 @@ Encontre aqui os comandos do editor de texto Vim.<br>
 Lista de exercicios sobre **Estrutura de repetição e Arrays. Por resolver.**<br>
 5. [Guia Foca - Linux](https://guiafoca.org/)<br>
 Encontre aqui informação sobre linux do basico ao avançado.
+> That is so funny! :joy: Isto é realmente agradável!
+### Não é o fim.
+Nunca é tarde para começar! [^1]
+
+[^1]: Seja persistente!.
